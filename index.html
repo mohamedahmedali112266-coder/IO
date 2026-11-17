@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IO | أكواد وألعاب</title>
+<meta name="description" content="IO: ألعاب وأدوات بتشتغل في المتصفح، مع الكود كامل لكل مشروع.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Syne:wght@800&display=swap">
+<link rel="stylesheet" href="style.css">
+<script src="config.js"></script>
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="#top" aria-label="الرئيسية"><i class="bar"></i><i class="ring"></i></a>
+  <nav aria-label="الأقسام"><a href="#projects">المشاريع</a><a href="#code">الكود</a><a href="#about">عني</a></nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <h1 id="nm" class="name">IO</h1>
+    <div class="hero-side">
+      <p id="tg" class="tag"></p>
+      <div class="cta">
+        <a class="btn pri" href="#projects">شوف المشاريع</a>
+        <a class="btn" href="#code">اقرأ الكود</a>
+        <a class="btn" id="gh" href="#" hidden target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <p class="stats" id="st"></p>
+    </div>
+  </section>
+
+  <section id="projects" class="sec">
+    <div class="sec-h">
+      <h2>المشاريع</h2>
+      <div class="chips" id="chips" role="group" aria-label="تصفية المشاريع"></div>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="code" class="sec">
+    <div class="sec-h"><h2>الكود</h2><p class="sub">اختار مشروع وشوف كوده كامل.</p></div>
+    <div class="viewer">
+      <div class="vtabs" id="vt" role="tablist" aria-label="ملفات الكود"></div>
+      <div class="vbar">
+        <span id="vinfo" class="vinfo"></span>
+        <span class="sp"></span>
+        <button class="btn sm" id="vcopy">نسخ الكود</button>
+        <a class="btn sm" id="vdl" download>تنزيل الملف</a>
+      </div>
+      <div class="vw" id="vw" tabindex="0" aria-label="عرض الكود"><pre class="gut" id="gut" aria-hidden="true"></pre><pre class="src" id="src"></pre></div>
+    </div>
+  </section>
+
+  <section id="about" class="sec about">
+    <h2>عني</h2>
+    <p id="ab"></p>
+  </section>
+</main>
+
+<footer class="foot"><span id="cp"></span><span>مستضاف على GitHub Pages</span></footer>
+<div id="toast" role="status" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
